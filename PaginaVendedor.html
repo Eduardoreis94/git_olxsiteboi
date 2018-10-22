@@ -1,0 +1,291 @@
+<html>
+	<head> 
+		<title>TCC</title> 		
+		<link rel="stylesheet" href="Css.css" type="text/css"/>	 
+        <meta http-equiv ="Content-Type" content ="text/html; charset=UTF-8">		
+	</head>
+	<body>
+		<header id="topo">
+			
+			 <center>  <img src="logo3.jpg" width="1400px"/>  </center>
+			 	
+				
+		</header>
+		
+		
+		<div id="principal">
+			<nav id="menu2">
+				<ul>
+					 <li><a href="principal.html">Principal</a></li>  
+			
+									
+				</ul>
+			</nav>
+			<article id="conteudo2">
+			
+			<form action="Script_do_Formulario.php" method="post">
+
+<!-- DADOS PESSOAIS-->
+
+<fieldset>
+ <legend> Dados Pessoais </legend>
+ <table cellspacing="10">
+  <tr>
+   <td>
+    <label for="nome"> Nome Completo: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="email">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label>Nascimento: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="dia" size="2" maxlength="2" value="DD"> 
+   <input type="text" name="mes" size="2" maxlength="2" value="MM"> 
+   <input type="text" name="ano" size="4" maxlength="4" value="AAAA">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="rg">RG: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="rg" size="13" maxlength="13"> 
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label>CPF:</label>
+   </td>
+   <td align="left">
+    <input type="text" name="cpf" size="9" maxlength="9"> - <input type="text" name="cpf2" size="2" maxlength="2">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label>Telefone/Whats:</label>
+   </td>
+   <td align="left">
+    <input type="text" name="cpf" size="9" maxlength="9"> 
+   </td>
+  </tr>
+ </table>
+</fieldset>
+<br />
+
+<!-- ENDEREÇO -->
+<fieldset>
+ <legend>Dados de Endereço</legend>
+ <table cellspacing="10">
+
+  <tr>
+   <td>
+    <label for="rua">Rua:</label>
+   </td>
+   <td align="left">
+    <input type="text" name="rua">
+   </td>
+   <td>
+    <label for="numero">Numero:</label>
+   </td>
+   <td align="left">
+    <input type="text" name="numero" size="4">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="bairro">Bairro: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="bairro">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="estado">Estado:</label>
+   </td>
+   <td align="left">
+    <input type="text" name="Estado">
+   </td>
+
+  </tr>
+  <tr>
+   <td>
+    <label for="cidade">Cidade: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="cidade">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="cep">CEP: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="cep" size="5" maxlength="5"> - <input type="text" name="cep2" size="3" maxlength="3">
+   </td>
+  </tr>
+ </table>
+</fieldset>
+<br />
+
+<!-- DADOS DE LOGIN -->
+<fieldset>
+ <legend>Dados de login</legend>
+ <table cellspacing="10">
+  <tr>
+   <td>
+    <label for="email">E-mail: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="email">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="login">Login de usuário: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="login">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="pass">Senha: </label>
+   </td>
+   <td align="left">
+    <input type="password" name="pass">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="passconfirm">Confirme a senha: </label>
+   </td>
+   <td align="left">
+    <input type="password" name="passconfirm">
+   </td>
+  </tr>
+ </table>
+</fieldset>
+<br />
+
+ <!-- DADOS DO ANIMAL -->
+<fieldset>
+ <legend>Dados do animal</legend>
+ <table cellspacing="10">
+  <tr>
+   <td>
+    <label for="raçaanimal">Raça: </label>
+   </td>
+   <td align="left">
+    <select name="raca"> 
+    <option value="--">--</option>
+    <option value="Nelore">Nelore</option> 
+    <option value="Brahaman">Brahaman</option> 
+    <option value="Girolando">Girolando</option> 
+    <option value="Senepol">Senepol</option> 
+    <option value="Mestiço">Mestiço</option> 
+    <option value="Tabapuã">Tabapuã</option> 
+    <option value="Holandês">Holandês</option> 
+    <option value="Aberdeen Angus">Aberdeen Angus</option> 
+    <option value="Jersey">Jersey</option> 
+    <option value="Gir">Gir</option> 
+    <option value="Guzerá">Guzerá</option> 
+    <option value="Red Angus">Red Angus</option> 
+    <option value="Hereford">Hereford</option> 
+    <option value="Canchim">Canchim</option> 
+    <option value="Guzolando">Guzolando</option> 
+    <option value="Sindi">Sindi</option> 
+    <option value="Charolês">Charolês</option> 
+    <option value="Marchigiana">Marchigiana</option> 
+    <option value="Simental">Simental</option> 
+    <option value="Caracu">Caracu</option> 
+    <option value="Indubrasil">Indubrasil</option> 
+    <option value="Blond dáquitaine">Blond dáquitaine</option> 
+    <option value="Chianina">Chianina</option> 
+    <option value="Devon">Devon</option> 
+    <option value="Gelbvieh">Gelbvieh</option> 
+    <option value="Limonsin">Limonsin</option> 
+    <option value="Piemontês">Piemontês</option> 
+	 <option value="Shorthorn">Shorthorn</option> 
+    <option value="Ayrshire">Ayrshire</option> 
+    <option value="Guernsey">Guernsey</option> 
+    <option value="Normanda">Normanda</option> 
+    <option value="Pardo Suiço">Pardo Suiço</option> 
+    <option value="Pitangueiras">Pitangueiras</option> 
+   </select>
+   </td>
+  </tr>
+   <td>
+    <label for="Aptidão">Aptidão: </label>
+   </td>
+   <td align="left">
+    <select name="Aptidão">
+	<option value="--">--</option>
+    <option value="Corte">Corte</option> 
+    <option value="Leite">Leite</option> 
+    <option value="Dupla Aptidão">Dupla Aptidão</option> 
+   
+   </select>
+   </td>
+  <tr>
+   <td>
+    <label for="imagem">Imagem:</label>
+   </td>
+   <td>
+    <input type="file" name="imagem" >
+
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="desc"> Descriçao: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="desc">
+   </td>
+  </tr>
+  <td>
+    <label for="valor"> Valor: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="valor">
+   </td>
+  </tr>
+  
+ </table>
+</fieldset>
+<br />
+
+<input name="ENVIAR" type="submit" onClick="window.open('principal.html')" value="enviar">
+<input type="reset" value="Limpar">
+</form>
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			   <div id = "divimagem">
+				
+				</div>	
+				
+		             
+		</div>
+			</article>
+			
+			<footer id="rodape">
+			
+			<h3>Grasi</h3>
+				
+					
+			</footer>  
+		  
+	</body>
+</html>
